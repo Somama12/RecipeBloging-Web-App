@@ -1,0 +1,30 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Explore Latest</li>
+    </ol>
+  </nav>
+
+<section class="pb-4 pt-4">
+    <div class="d-flex mb-2 align-items-center">
+        <h2>Latest Recipes</h2>
+        <a href="/explore-latest" class="ms-auto">View More</a>
+    </div>
+
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+    <% if (latest !=''){
+        %> <%latest.forEach((Recipe,index) => { %>
+            <a href="/recipe/<%= Recipe._id %>" class="col text-center category__link">
+            <div class="category__img category__img--large shadow">
+                <img src="/uploads/<%= Recipe.image %>" alt="<%= Recipe.name %>" loading="lazy" >
+               </div>
+               <div class="pt-1"><%= Recipe.name %> </div>
+        </a>
+        <% })%>
+         <% } %>
+   
+        
+        
+    </div>
+
+</section>
