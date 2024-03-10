@@ -1,0 +1,27 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Show Random</li>
+    </ol>
+  </nav>
+
+
+  
+
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+    <% if (random !=''){
+        %> <%random.forEach((Recipe,index) => { %>
+            <a href="/recipe/<%= Recipe._id %>" class="col text-center category__link">
+            <div class="category__img category__img--large shadow">
+                <img src="/uploads/<%= Recipe.image %>" alt="<%= Recipe.name %>" loading="lazy" >
+               </div>
+               <div class="pt-1"><%= Recipe.name %> </div>
+        </a>
+        <% })%>
+         <% } %>
+   
+        
+        
+    </div>
+
+</section>
