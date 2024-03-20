@@ -3,12 +3,17 @@
 Recipe Blogging is a web application dedicated to sharing and discovering recipes within a community-driven platform. Built using Node.js, React.js, MongoDB, Mongoose, JavaScript, and Bootstrap, this app provides seamless CRUD operations for managing recipes, encourages user contributions, ensures responsive design, facilitates social interaction, and offers robust search and filtering options.
 
 ## Key Features
+```
 
 ### CRUD Operations
+```
 Users can effortlessly manage their recipes through Create, Read, Update, and Delete operations.
+```
 
 ### User Contributions
+```
 Join a vibrant community where users enthusiastically share their favorite recipes, contributing to a diverse collection of culinary delights.
+```
 
 ### Responsive Design
 Enjoy a consistent user experience across devices with a mobile-friendly interface.
@@ -18,7 +23,7 @@ Engage with fellow users through comments, likes, and shares, fostering a sense 
 
 ### Search and Filters
 Discover new recipes quickly with robust search and filtering options, facilitating efficient recipe discovery based on preferences.
-
+```
 ## Technology Stack
 
 - **Node.js**: Backend runtime environment
